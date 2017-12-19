@@ -15,4 +15,9 @@ public class HelloWorldController {
     public String greeting2() {
         return "Hello World2!";
     }
+
+    @RequestMapping("hello3")
+    public String greeting3() {
+        return "Hello World3!";
+    }
 }
