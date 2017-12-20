@@ -1,5 +1,6 @@
 package com.mywebapp.webapp;
 
+import com.mywebapp.webapp.util.ReadProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,5 +9,6 @@ public class WebappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebappApplication.class, args);
+		System.out.println(new ReadProperties().getUrlValue("server.port"));
 	}
 }
